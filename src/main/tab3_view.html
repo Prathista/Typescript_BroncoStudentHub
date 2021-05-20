@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <title> Advisor and Graduation Information </title>
+</head>
+<body>
+<header>
+  <h2>Billy Bronco's Grading Calculator</h2>
+</header>
+
+<div class="navbar">
+  <a class="active" href="#">Home</a>
+  <a href="tab1_view.html">tab1</a>
+  <a href="#">Search</a>
+  <a href="tab3_view.html">Contact</a>
+  <a href="login_view.html">Login</a>
+</div>
+
+
+<div id="center_block">
+  <form id="task-form">
+    <div class="segment">
+      <h1>Advisor and Graduation Information</h1>
+    </div>
+    <label>
+      <h2>Check Your Academic Standing</h2>
+    </label>
+    <label>
+      <h5 style = "font-size: large"> Enter Your Current Cumulative GPA:</h5>
+      <input id="GPA" type="string"/>
+      <button onclick="checkStatus(document.getElementById('GPA').value)" >Check GPA Status</button>
+      <script type="text/typescript" src="../../../../Downloads/TypescriptTab3/TypescriptTab3/ViewTab/Tab3.ts"></script>
+    </label>
+    <br>
+    <br>
+    <br>
+    <label>
+      <h2>Advisor Contact Information</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Choose College</button>
+        <div class="dropdown-content">
+          <a href="http://www.cpp.edu/~sci/" target="_blank" rel="noopener noreferrer">College of Science</a>
+          <a href="http://www.cpp.edu/~agri/" target="_blank" rel="noopener noreferrer">College of Agriculture</a>
+          <a href="http://www.cpp.edu/~engineering/" target="_blank" rel="noopener noreferrer">College of Engineering</a>
+          <a href="https://env.cpp.edu/env/env" target="_blank" rel="noopener noreferrer">College of Environmental Design</a>
+          <a href="http://www.cpp.edu/~cba/" target="_blank" rel="noopener noreferrer">College of Business Administration</a>
+          <a href="https://www.cpp.edu/ceu/" target="_blank" rel="noopener noreferrer">College of the Extended University</a>
+          <a href="http://www.cpp.edu/~collins/" target="_blank" rel="noopener noreferrer">Collins College of Hospitality Management</a>
+          <a href="http://www.cpp.edu/~ceis/" target="_blank" rel="noopener noreferrer">College of Education & Integrative Studies</a>
+          <a href="http://www.cpp.edu/~class/" target="_blank" rel="noopener noreferrer">College of Letters, Arts, & Social Sciences</a>
+        </div>
+      </div>
+    </label>
+    <br>
+    <br>
+    <br>
+    <fieldset>
+      <h2>Academic Standing for Undergraduates:</h2>
+      <div id="good">
+        <h3>Good Standing</h3>
+        <h4>What It Means</h4>
+          <p>Your Cumulative and CPP GPA are 2.0 or above.</p>
+      </div>
+      <br>
+      <div id="atrisk">
+        <h3>At-Risk</h3>
+        <h4>What It Means</h4>
+        <p>You have a CPP or Major GPA below a 2.2.</p>
+        <h4>What Will Happen</h4>
+        <p>The At-Risk hold is placed on your account, and the hold will impact your future registration.</p>
+        <h4>Next Steps</h4>
+        <p>In order to remove the hold, you must complete a Blackboard module. Once completed, the hold will be automatically removed in 48 hours.</p>
+      </div>
+      <br>
+      <div id="acprob">
+        <h3>Academic Probation</h3>
+        <h4>What It Means</h4>
+        <p>You have a Cumulative or CPP GPA below 2.0, but it is above the level for Probation with Contract.</p>
+        <h4>What Will Happen</h4>
+        <p>You will get a Probation Hold. This hold is placed on your account and will affect your future registration.</p>
+        <h4>Next Steps</h4>
+        <p>In order to remove the hold, you must complete two steps:</p>
+        <ol>
+          <li>Complete a Blackboard-based module.</li>
+          <li>Meet with your advisor. After this meeting, the hold will be removed.</li>
+        </ol>
+      </div>
+      <br>
+      <div id="probcont">
+        <h3>Probation with Contract</h3>
+        <h4>What It Means</h4>
+        <p>You have a Cumulative or CPP GPA below the following levels based on class standing: </p>
+        <table border="2" cellpadding="5" color="darkblue"><caption>Probation With Contract</caption>
+          <tbody>
+          <tr style="height: 24px;">
+            <td style="height: 24px;"></td>
+            <td style="height: 24px;">Units Completed</td>
+            <td style="height: 24px;">GPA</td>
+          </tr>
+          <tr style="height: 21px;">
+            <td style="height: 21px;">Freshman</td>
+            <td style="height: 21px;">&lt; 30</td>
+            <td style="height: 21px;">&lt;1.5</td>
+          </tr>
+          <tr style="height: 24px;">
+            <td style="height: 24px;">Sophomore</td>
+            <td style="height: 24px;">30-59</td>
+            <td style="height: 24px;">&lt;1.7</td>
+          </tr>
+          <tr style="height: 24px;">
+            <td style="height: 24px;">Junior</td>
+            <td style="height: 24px;">60-89</td>
+            <td style="height: 24px;">&lt;1.85</td>
+          </tr>
+          <tr style="height: 24px;">
+            <td style="height: 24px;">Senior</td>
+            <td style="height: 24px;">90 &gt;</td>
+            <td style="height: 24px;">&lt;1.95</td>
+          </tr>
+          </tbody>
+        </table>
+        <h4>What Will Happen</h4>
+        <p>The Probation with Contract hold is placed on your account and the hold will impact your future registration.</p>
+        <h4>Next Steps</h4>
+        <p>In order to remove the hold, you must complete three steps:</p>
+        <ol>
+          <li>
+            <p>Complete a Blackboard based module.</p>
+          </li>
+          <li>
+            <p>Complete a Probation with Contract worksheet provided by your advisor</p>
+          </li>
+          <li>
+            <p>Finally, meet with your advisor and after the meeting, the PWC hold will be removed.</p>
+          </li>
+        </ol>
+      </div>
+      <div id="sources">
+        <h3>Source: <a href="https://www.cpp.edu/studentsuccess/oss/academic-advising/university-policy-information/academic-standing.shtml" target="_blank" rel="noopener noreferrer">Academic Standing Page</a>
+          and <a href="https://www.cpp.edu/academics/colleges-departments/index.shtml" target="_blank" rel="noopener noreferrer">Colleges & Departments</a>.  </h3>
+      </div>
+    </section>
+    </fieldset>
+  </form>
+</div>
+<script src="Tab3.js"></script>
+<script src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js"></script>
+<script src="https://rawgit.com/basarat/typescript-script/master/transpiler.js"></script>
+</body>
+</html>

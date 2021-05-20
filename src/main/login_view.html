@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+    <TITLE>Capstone Typescript Login</TITLE>
+</HEAD>
+
+<BODY>
+<header>
+    <h2>Billy Bronco's Grading Calculator</h2>
+</header>
+
+<div class="navbar">
+    <a class="active" href="#">Home</a>
+    <a href="tab1_view.html">tab1</a>
+    <a href="#">Search</a>
+    <a href="tab3_view.html">Contact</a>
+    <a href="login_view.html">Login</a>
+</div>
+
+<div id="container">
+
+    <div id="tabs">
+
+        <p type="button" id="lt" class="tabs" onclick="loginTabFun()">Log in</p>
+
+        <link rel="stylesheet" href="Login.css">
+
+        <div id="clear"></div>
+    </div>
+
+    <div id="cont">
+
+        <div id="login" class="comm">
+            <h3>Sign in</h3>
+
+            <input id="se" type="email" placeholder="Email" required/>
+            <input id="sp" type="password" placeholder="Password" required/>
+
+            <input type="button" class="button" id="enter" value="Login">
+            <input type="button" class="button" id="forgotPass" value="Forgot Password?">
+            <a href="register_view.html" > Don't have an account? CLICK HERE </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+<script src="LoginTs.js"></script>
+</BODY>
+</HTML>
