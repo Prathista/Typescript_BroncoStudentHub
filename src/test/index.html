@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style.css">
+  <div class="wrapper">
+
+	<h1>Grade Calculator</h1>
+
+	<div class="directions">Input your category name, grade and weight for each category:</div>
+
+  <div class="row">
+    <div class="column">
+      <input id="cat1" type="text" placeholder="Category name" />
+      <input id="cat2" type="text" />
+      <input id="cat3" type="text" />
+      <input id="cat4" type="text" />
+    </div>
+    <div class="column">
+    <input id="grade1" type="text" placeholder="Grade (%)" />
+    <input id="grade2" type="text" />
+    <input id="grade3" type="text" />
+    <input id="grade4" type="text" />
+    </div>
+    <div class="column">
+    <input id="weight1" type="text" placeholder= "Weight(%)" />
+    <input id="weight2" type="text" />
+    <input id="weight3" type="text" />
+    <input id="weight4" type="text" />
+    </div>
+  </div>
+  <input id="submitbutton" type="button" value="Calculate" onClick="submit();"/>
+
+
+	<h2>Your final grade is:</h2>
+	<div id="final_grade"></div>
+
+</div>
+</html>
