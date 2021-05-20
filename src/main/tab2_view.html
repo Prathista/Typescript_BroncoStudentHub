@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA Calculator</title>
+  <h1>Bronco Student Hub</h1>
+  <link rel="stylesheet"  href="tab2_style.css">
+</head>
+
+<body>
+<div class="navbar">
+  <a class="active" href="home_view.html">Home</a>
+  <a href="tab1_view.html">Grade Calculator</a>
+  <a href="tab2_view.html">GPA Calculator</a>
+  <a href="tab3_view.html">GPA Status & Contact</a>
+  <a href="tab4_view.html">Have a Question?</a>
+  <a href="login_view.html">Login</a>
+</div>
+
+<h1>Calculate Your Grade</h1>
+
+<form name="calcGpaForm" method="post">
+  <table>
+    <tr>
+      <td></td>
+      <th>Grade</th>
+      <th>Credit</th>
+    </tr>
+    <tr>
+      <th class="right-align">
+        <span style="color:#cc0000;"></span>Course 1:
+      </th>
+      <td class="align-left"><input type="text" name="grade1" type="text" id="grade1" size="10"></td>
+      <td class="margin-left: auto"><input type="text" name="credit1" id="credit1" size="10"></td>
+    </tr>
+    <tr>
+      <th class="right-align">
+        <span style="color:#cc0000;"></span>Course 2:
+      </th>
+      <td class="align-left"><input name="grade2" type="text" id="grade2" size="10"></td>
+      <td class="align-left"><input type="text" name="credit2" id="credit2" size="10"></td>
+    </tr>
+    <tr>
+      <th class="right-align">
+        <span style="color:#cc0000;"></span>Course 3:
+      </th>
+      <td class="align-left"><input name="grade3" type="text" id="grade3" size="10"></td>
+      <td class="align-left"><input type="text" name="credit3" id="credit3" size="10"></td>
+    </tr>
+    <tr>
+      <th class="right-align">
+        <span style="color:#cc0000;"></span>Course 4:
+      </th>
+      <td class="align-left"><input name="grade4" type="text" id="grade4" size="10"></td>
+      <td class="align-left"><input type="text" name="credit4" id="credit4" size="10"></td>
+    </tr>
+    <tr>
+      <th class="right-align">
+        <span style="color:#cc0000;"></span>Course 5:
+      </th>
+      <td class="align-left"><input type="text" name="grade5" id="grade5" size="10"></td>
+      <td class="align-left"><input type="text" name="credit5" id="credit5" size="10"></td>
+    </tr>
+    <tr>
+      <th class="right-align">
+        <span style="color:#cc0000;"></span>Course 6:
+      </th>
+      <td class="align-left"><input type="text" name="grade6" id="grade6" size="10"></td>
+      <td class="align-left"><input type="text" name="credit6" id="credit6" size="10"></td>
+    </tr>
+
+    <tr>
+      <td>Calculate!</td>
+      <td class="right-align">
+        <input type="button" value="Calculate GPA" id="gpacalc" onclick="gpaCalc()">
+        <script type="text/typescript" src="Tab2.ts"></script>
+      </td>
+      <td class="align-left">
+        <input name="Reset" type="reset">
+      </td>
+    </tr>
+    <tr>
+      <td class="right-align" colspan="2">
+        <span style="font-weight:bolder;">Your GPA is:</span>
+      </td>
+      <td><input type="text" id="gpa" value="" size="10"></td>
+    </tr>
+  </table>
+</form>
+
+
+<script src="https://rawgit.com/Microsoft/TypeScript/master/lib/typescriptServices.js"> </script>
+<script src="https://rawgit.com/basarat/typescript-script/master/transpiler.js"></script>
+
+</body>
+</html>

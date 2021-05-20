@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #FFFAF0;
+    text-align:center;
+    margin: 50px;
+
+}
+h1 {
+    font-size: 32px;
+    font-family: Arial;
+    color: rgb(7, 78, 7);
+    margin: 10px;
+}
+
+#nameDiv{
+    margin-top:50px
+}
+
+.input{
+    font-size: 25px;
+    color:black;
+    font-weight: 700;
+    font-family:cursive;
+    margin: 10px;
+}
+
+#button{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #FFFAF0;
+    color: whitesmoke;
+    box-shadow: #FFFAF0;
+    margin-top: 10px;
+}
+
+table{
+    border-collapse:collapse;
+    width:50%;
+    margin: 50px auto;
+    background-color:white;
+}
+
+
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+table, th, td{
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color:rgb(217, 224, 233);
+    border-radius: 10px;
+}
+
+th{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: arial;
+    color: black;
+    text-align: center;
+}
+
+td{
+    font-size: 25px;
+    color:black;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.text{
+    padding: auto;
+}
+
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+}
